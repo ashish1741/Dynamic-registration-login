@@ -1,9 +1,22 @@
 import React from 'react'
-import Home from './components/Home'
+import Form from "./components/Form"
+import Left from "./components/Left"
+import Right from "./components/Right"
+import Success from "./components/success"
+import { BrowserRouter, Route , Routes } from 'react-router-dom'
+import Layout from './components/Layout'
+
+
 
 function App() {
   return (
-       <Home /> 
+    <BrowserRouter >
+    <Routes>
+      <Route path='/' element={<Layout />} />
+    </Routes>
+    </BrowserRouter>
+       
+       
   )
 }
 
