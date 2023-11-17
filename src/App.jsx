@@ -13,6 +13,7 @@ function App() {
     <BrowserRouter >
     <Routes>
       <Route path='/' element={<Layout />} />
+      <Route path='/form' element={<Form />} />
     </Routes>
     </BrowserRouter>
        
