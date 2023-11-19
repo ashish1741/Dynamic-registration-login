@@ -5,7 +5,7 @@ import Right from './Right'
 
 function Layout() {
   return (
-    <div className="relative w-[90%] m-4 p-4 bg-slate-700 h-[80%]  top-4 left-12  bottom-3  flex gap-3 justify-center rounded  ">
+    <div className="relative w-[90%] m-4 bg-slate-300 shadow-2xl shadow-gray-400 h-[80%]  top-4 left-12  bottom-3  flex gap-3 justify-center rounded  ">
         <Left />
         <Right />
         
