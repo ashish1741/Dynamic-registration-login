@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import { Polygon1, briefcase, user } from '../assets'
+import { Polygon1, Polygon2, briefcase, user } from '../assets'
 import Button from "../helper/Button"
 
 function Right() {
@@ -15,16 +15,24 @@ function Right() {
 
         </div>
         <Link to={"/form"}>
-            <div className="border mt-9 border-blue-500 p-2 rounded flex justify-evenly w-[60%]">
+            <div className="border shadow-xl mt-9 border-blue-500 p-2 rounded flex justify-evenly w-[60%]">
                 <img src={user} alt="" className='relative left-[43px]  ' />
                 <img src={Polygon1} className='p-2' alt="indiviuals" />
-                <Button   />
-                <span className='mt-10 text-[30px]' >&#8594;</span>
-
-                
-
+                <Button  
+                title="Individual"
+                description= "Personal account to manage all you activities."  />
+                <span className='mt-10 text-[30px] text-blue-900' >&#8594;</span>
             </div>
-
+        </Link>
+        <Link to={"/form"}>
+            <div className=" hover:border shadow-xl mt-9 border-blue-500 p-2 rounded flex justify-evenly w-[60%]">
+                <img src={briefcase} alt="" className='relative left-[43px]  ' />
+                <img src={Polygon2} className='p-2' alt="indiviuals" />
+                <Button  
+                title="Business"
+                description= "Own or belong to a company, this is for you."  />
+                <span className='mt-10 text-[30px] text-blue-900' >&#8594;</span>
+            </div>
         </Link>
 
     </div>
