@@ -17,7 +17,7 @@ function Left() {
             
 
         </div>
-        <div className="intro p-2 mt-5 mb-5 ">
+        <div className="intro p-2 mt-2 mb-5 ">
             <h1 className='text-[40px] font-extrabold ml-10 text-green-600'>&ldquo;</h1>
             <h1 className='text-white p-3 text-[24px] font-[400] ml-10  '>The passage experienced a surge in popularity <br /> during the 1960s when Letraset used it on their <br /> dry-transfer sheets, and again during the 90s as <br /> desktop publishers bundled the text with their <br /> software.</h1>
             <span className='text-white p-2 font-bold  ml-10 mt-10'>Vincent Obi  &#x2713;</span>

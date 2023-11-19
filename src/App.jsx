@@ -12,8 +12,11 @@ function App() {
   return (
     <BrowserRouter >
     <Routes>
-      <Route path='/' element={<Layout />} />
-      <Route path='/form' element={<Form />} />
+      <Route path='/' element={<Layout />}>
+      <Route path='/:id' element={<Form />} />
+
+
+      </Route>
     </Routes>
     </BrowserRouter>
        
