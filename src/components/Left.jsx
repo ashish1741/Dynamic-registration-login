@@ -15,7 +15,6 @@ function Left() {
             <img src={Group} alt="" className='p-2' />
             <img src={Group} alt="" className='p-2' />
             
-
         </div>
         <div className="intro p-2 mt-2 mb-5 ">
             <h1 className='text-[40px] font-extrabold ml-10 text-green-600'>&ldquo;</h1>
