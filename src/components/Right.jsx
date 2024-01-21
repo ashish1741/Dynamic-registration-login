@@ -1,9 +1,14 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { Polygon1, Polygon2, briefcase, user } from '../assets';
 import Button from '../helper/Button';
 
 function Right() {
+  const navigate = useNavigate();
+
+  const handleButtonClick = (path) => {
+    navigate(path);
+  };
   return (
     <>
         <div className="p-2 w-[50%] bg-slate-300 rounded-md shadow-slate-500">
@@ -14,8 +19,7 @@ function Right() {
             <h1 className='font-bold text-[30px] ml-11'>Join Us!</h1>
             <p className='font-[400] text-[#8692A6] p-2 mt-2 ml-10'>To begin this journey, tell us what type of <br /> account you’d be opening.</p>
           </div>
-          <Link to={"/individual"}>
-            <div className="border shadow-xl mt-9 border-blue-500 p-2 rounded flex justify-evenly w-[60%]">
+            <div className="border shadow-xl mt-9 border-blue-500 p-2 rounded flex justify-evenly w-[60%]" onClick={() => handleButtonClick("/individual")}>
               <img src={user} alt="" className='relative left-[43px]  ' />
               <img src={Polygon1} className='p-2' alt="indiviuals" />
               <Button  
@@ -24,9 +28,7 @@ function Right() {
               />
               <span className='mt-10 text-[30px] text-blue-900' >&#8594;</span>
             </div>
-          </Link>
-          <Link to={"/business"}>
-            <div className=" hover:border shadow-xl mt-9 border-blue-500 p-2 rounded flex justify-evenly w-[60%]">
+            <div className=" hover:border shadow-xl mt-9 border-blue-500 p-2 rounded flex justify-evenly w-[60%]" onClick={() => handleButtonClick("/business")}>
               <img src={briefcase} alt="" className='relative left-[43px]  ' />
               <img src={Polygon2} className='p-2' alt="indiviuals" />
               <Button  
@@ -35,7 +37,6 @@ function Right() {
               />
               <span className='mt-10 text-[30px] text-blue-900' >&#8594;</span>
             </div>
-          </Link>
         </div>
       
     </>
