@@ -30,6 +30,10 @@ function IndividualForm() {
     navigate("/");
   };
 
+  const handleRegisterAccount = () => {
+    navigate("/contactPage")
+  }
+
   return (
     <div className="p-2 w-[50%]">
       <div className="flex justify-between items-center my-2">
@@ -43,7 +47,7 @@ function IndividualForm() {
         </div>
         <div className="p-2">
           <span className="font-light text-gray-600 uppercase">
-            Step 01 /03
+            Step 01 /02
           </span>
           <p className="font-bold text-gray-600">Personal Info</p>
         </div>
@@ -108,8 +112,14 @@ function IndividualForm() {
           </label>
         </div>
       </form>
-    <button className='ml-10 mt-2 shadow-md hover:bg-transparent hover:border-black hover:text-black text-center rounded-sm text-white font-bold p-2 bg-blue-900'>Register Account &#8594;</button>
-
+      <button 
+      onClick={handleRegisterAccount}
+      className="ml-10 mt-2 shadow-md
+       hover:bg-transparent hover:border-black
+        hover:text-black text-center rounded-sm
+         text-white font-bold p-2 bg-blue-900">
+        Register Account &#8594;
+      </button>
     </div>
   );
 }

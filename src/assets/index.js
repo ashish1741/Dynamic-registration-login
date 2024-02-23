@@ -8,4 +8,7 @@ import Group from "./Group.svg"
 import Vector from "./Vector.svg"
 import Vecto1 from "./Vector1.svg"
 
-export {briefcase,user,Union,Polygon1,Polygon2,Group,Vector,Vecto1}
+export {briefcase,user,Union,Polygon1,Polygon2,Group,Vector,Vecto1};
+
+
+

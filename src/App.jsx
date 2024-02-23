@@ -3,6 +3,7 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import Layout from './components/Layout';
 import IndividualForm from './components/IndividualForm';
 import BusinessForm from './components/BusinessForm';
+import ContactPage from './components/ContactPage';
 
 function App() {
   return (
@@ -10,8 +11,11 @@ function App() {
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route path="individual" element={<IndividualForm />} />
+          <Route path='contactPage' element={<ContactPage />} />
           <Route path="business" element={<BusinessForm />} />
-        </Route>
+          <Route path="verification" element={<BusinessForm />} />
+          </Route>
+
       </Routes>
     </BrowserRouter>
   );
