@@ -108,6 +108,8 @@ function IndividualForm() {
           </label>
         </div>
       </form>
+    <button className='ml-10 mt-2 shadow-md hover:bg-transparent hover:border-black hover:text-black text-center rounded-sm text-white font-bold p-2 bg-blue-900'>Register Account &#8594;</button>
+
     </div>
   );
 }
